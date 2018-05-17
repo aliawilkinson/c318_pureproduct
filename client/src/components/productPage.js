@@ -25,9 +25,10 @@ class ProductPage extends Component {
         var id = this.props.match.params.id;
         axios.post(`http://localhost:8888/find_product_by_id.php`, id)
             .then(res => {
-                var singleFoundationData = res.data;
+                console.log(res.data)
+                // var singleFoundationData = JSON.parse(res.data);
                 this.setState({
-                    data: res.data
+                    // data: singleFoundationData
                 })
                 console.log('this.state: ', this.state.data)
             })
