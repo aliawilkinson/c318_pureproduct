@@ -111,7 +111,7 @@ export default class DisplayImage extends Component {
             return (
 
                 <div className={displayCont}>
-                    <a onClick={displayNone === 'display-none' ? (e) => this.preventHistoryObjectExpansion(e) : null} href={`/product/ ${product_id}`}>
+                    <a onClick={displayNone === 'display-none' ? (e) => this.preventHistoryObjectExpansion(e) : null} href={`/product/${product_id}`}>
                         <div className={imgProductPage}>
                             <img className={productImg} src={image} />
                         </div>
